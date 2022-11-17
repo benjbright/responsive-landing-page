@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@400;500;700&display=swap);
+
+* {
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.3rem;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0.5em 2em;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.logo {
+  font-size: 1.3rem;
+}
+
+.menu-items,
+.cta-btns {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.logos-section {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+.menu-items li,
+.cta-btns li {
+  font-size: 0.7rem;
+  margin-right: 1rem;
+  color: hsl(0, 0%, 41%);
+}
+
+.cta-btns li:nth-last-child(1) {
+  border: 1px solid gray;
+  padding: 0.2rem 0.7rem;
+  border-radius: 0.3rem;
+}
+
+/* MAIN */
+main {
+  /* border: 1px solid orange; */
+  height: 70vh;
+  margin-top: 0.5em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+main h1 {
+  font-size: 2rem;
+}
+
+main p {
+  font-size: 0.7rem;
+  color: hsl(0, 0%, 41%);
+  line-height: 1rem;
+}
+
+main button {
+  background-color: hsl(0, 0%, 8%);
+  color: #fff;
+  border: none;
+  font-size: 0.7rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+}
+
+.text-side {
+  /* border: 1px solid green; */
+  padding-right: 2em;
+}
+
+.clients-logos img {
+  width: 8rem;
+  margin-right: -3rem;
+}
+
+.clients-logos {
+  margin-top: 1rem;
+  margin-left: -2rem;
+  display: flex;
+  width: 10rem;
+}
+
+.clients-logos img:nth-child(2) {
+  width: 7rem;
+}
+
+/* HERO IMAGE */
+.image-side {
+  /* border: 1px solid red; */
+  height: 70vh;
+}
+
+.desktop-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25%;
+}
+
+.mobile-img {
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  /* text-align: center; */
+  margin-top: 0.5em;
+  /* margin-bottom: 0.5em; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+footer p {
+  font-size: 0.4rem;
+  /* text-align: center; */
+  margin-bottom: 0;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+  font-size: 0.4rem;
+}
+
+/* RESPONSIVE */
+@media (min-width: 300px) and (max-width: 480px) {
+  * {
+    font-size: 1rem;
+  }
+
+  body {
+    /* height: 100vh;
+    width: 100vw; */
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+  }
+
+  nav {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 1rem auto 0 auto;
+  }
+
+  /* CLIENTS LOGOS */
+  .clients-logos {
+    margin-top: 2rem;
+  }
+
+  .clients-logos img {
+    width: 30rem;
+  }
+
+  .clients-logos {
+    margin-top: 1rem;
+    display: flex;
+  }
+
+  .clients-logos img:nth-child(2) {
+    width: 7rem;
+  }
+
+  /* Images */
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .cta-btns,
+  .menu-items {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Client Logos */
+  .clients-logos img {
+    width: 4.5rem;
+    margin-right: 0.8rem;
+  }
+
+  footer p,
+  footer a {
+    font-size: 0.5rem;
+  }
+}
